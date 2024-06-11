@@ -1,0 +1,32 @@
+#container
+{
+    font-family: 'Lucida Sans'sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+button
+{
+    font-size: 1rem;
+    /*padding: 10px 15px;*/
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: white;
+    color: black;
+}
+button:active
+{
+    background-color: aqua;
+}
+input{
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100px;
+}
