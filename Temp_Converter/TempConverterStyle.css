@@ -1,0 +1,39 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: hsl(210, 47%, 82%);
+}
+form{
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 5px 4px 10px hsl(186, 32%, 60%);
+    padding: 1px;
+}
+#tempTextBox{
+    width: 100px;
+    text-align: center;
+}
+div{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+label{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+button{
+    background-color: hsl(197, 77%, 86%);
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(197, 77%, 76%);
+}
+#result
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}

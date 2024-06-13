@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temp Converter</title>
+    <link rel="stylesheet" href="TempConverterStyle.css">
 </head>
 <body>
-    
+    <form>
+        <h1>Temperature Converter</h1>
+        <input type="number" id="tempTextBox" value="0">
+        <br>
+        <div>
+            <input type="radio" id="toFahrenheit" name="unit">
+            <label for="toFahrenheit">Celsius ➡ toFahrenheit </label>
+            <br>
+            <input type="radio" id="toCelsius" name="unit">
+            <label for="toCelsius">Fahrenheit ➡ Celsius </label>
+        </div>      
+        <br>
+        <br>
+        <button type="button" onclick="Convert()">Convert</button>
+        <p id="result">Result</p>
+    </form>
+    <script src="TempConverter.js"></script>
 </body>
 </html>
