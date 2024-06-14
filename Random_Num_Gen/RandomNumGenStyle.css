@@ -1,0 +1,48 @@
+body{
+    background-color: hsl(288, 4%, 28%);
+    font-family: Helvetica, sans-serif;
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+}
+h1{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+#RangeLabel{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+div{
+    background-color:  hsl(280, 2%, 37%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 11px;
+    max-width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Range{
+    margin: 3px;
+    max-width: 50px;
+    font-size: 1em;
+    text-align: center;
+    margin-left: auto;
+    align-items: center;
+
+}
+#generateRandom{
+    border-radius: 7px;
+    font-size: 1.06em;
+    border: 0;
+    margin-top: -10px;
+    margin-bottom: 8px;
+    background-color: hsl(280, 6%, 70%);
+    cursor: pointer;
+}
+#generateRandom:hover{
+    background-color: hsl(280, 6%, 80%);
+}
+#Result{
+    font-size: 1.1em;
+    font-weight: bold;
+}
