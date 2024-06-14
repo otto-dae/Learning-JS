@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RPS_Game_Style.css">
+    <title>RpsGame</title>
+</head>
+<body>    
+
+    <h1>Rock - Paper - Scissors</h1>
+    <div id="Container">
+        <h2>Choose:</h2>
+        <input type="image" onclick="StartGame('Rock')" src="RPS_Images\Rock.png" >
+        <input type="image" onclick="StartGame('Paper')" src="RPS_Images\Paper.png" >
+        <input type="image" onclick="StartGame('Scissors')" src="RPS_Images\Scissors.png" >
+        <br>
+        <h2>Computer chose:</h2>
+        <img id="ComputerChoice" src="">
+        <br>
+        <label id="Result"></label>
+        <br>
+        <label id="PlayerWins" class="DisplayResults"></label>
+        <label id="ComputerWins" class="DisplayResults"></label>
+    </div>
+
+    <script src="RPS_Game.js"></script>
+</body>
+</html>
