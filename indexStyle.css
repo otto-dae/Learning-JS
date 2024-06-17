@@ -1,0 +1,33 @@
+body{
+    background-color: hsl(69, 69%, 79%);
+}
+#Container{
+    max-width: 462px;
+    margin: auto;
+    overflow: hidden;
+
+}
+.Icons{
+    min-height: 110px;
+    min-width: 110px;
+    max-height: 110px;
+    min-width: 110px;
+    background-color: hsl(68, 44%, 71%);
+    border-radius: 10px;
+
+}
+.Icons:hover{
+    max-height: 120px;
+    min-width: 120px;
+    transition: 100ms;
+    background-color: hsl(68, 44%, 65%);
+}
+footer{
+    position: fixed;
+    width: 99%;
+    position: absolute;
+    bottom: 0;
+}
+h1{
+    max-width: 200px;
+}
