@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+#VideoBackground{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: center;
+}
+#Clock{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 380px;
+    height: fit-content;
+    font-size: 4.5em;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+#PlayerContainer{
+    position: absolute;
+    border-radius: 9px;
+    backdrop-filter: blur(15px);
+    width: 280px;
+    height: 250px;
+    bottom: 0; 
+    margin: 20px;
+}
+#ImageMusic{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+#MusicName{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 111px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.AudioControls{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25px;
+    margin: 0 auto;
+}
+.AudioButtons{
+    height: 20px;
+    width: 20px;
+    opacity: .5;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30%;
+    margin: 10px;
+    box-shadow: 1px 1px 10px;
+    margin-bottom: 30px;
+}
+.AudioButtons:hover{
+    opacity: 1;
+}
+#PlayButton{
+    height: 30px;
+    width: 30px;
+}

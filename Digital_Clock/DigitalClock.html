@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DigitalClockStyle.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="VideoBackground">
+        <source src="Digital_Clock_Resources\RainLoop.mp4">
+    </video>
+    
+
+    <div id="Clock">00:00:00</div>
+
+
+    <div id="PlayerContainer">      
+        <img id="ImageMusic" src="Digital_Clock_Resources\OddlyCuteImage.jpg">
+        <div id="MusicName">
+            <p>Music Name</p>
+            <audio id="Audio" src="Digital_Clock_Resources\IsGingerSweet.mp3"></audio>
+        </div>    
+        <div class="AudioControls">       
+        <input class="AudioButtons" id="PrevButton" onclick="PrevSong()" type="image" src="Digital_Clock_Resources\PrevSong.png">
+        <input class="AudioButtons" id="PlayButton" onclick="PlayPause()" type="image" src="Digital_Clock_Resources\PlaySong.png">
+        <input class="AudioButtons" id="NextButton" onclick="NextSong()" type="image" src="Digital_Clock_Resources\NextSong.png">
+        </div>        
+    </div>
+
+    <script src="DigitalClock.js"></script>
+</body>
+</html>

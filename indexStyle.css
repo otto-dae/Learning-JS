@@ -1,11 +1,11 @@
 body{
     background-color: hsl(69, 69%, 79%);
-}
-#Container{
-    max-width: 462px;
+}.Container{
+    max-width: 470px;
     margin: auto;
     overflow: hidden;
-
+    align-items: center;
+    padding: 10px;
 }
 .Icons{
     min-height: 110px;
@@ -14,12 +14,12 @@ body{
     min-width: 110px;
     background-color: hsl(68, 44%, 71%);
     border-radius: 10px;
-
+    transition: all 300ms;
+    margin: 2px;
 }
-.Icons:hover{
-    max-height: 120px;
-    min-width: 120px;
-    transition: 100ms;
+.Container .Icons:hover{
+    transform: scale(1.05);
+    transition: 300ms;
     background-color: hsl(68, 44%, 65%);
 }
 footer{
@@ -30,4 +30,9 @@ footer{
 }
 h1{
     max-width: 200px;
+}
+.Selections{
+    max-width: 120px;
+    max-height: 120px;
+    display: inline;
 }
