@@ -7,28 +7,42 @@
     <title>Digital Clock</title>
 </head>
 <body>
-
     <video autoplay muted loop id="VideoBackground">
         <source src="Digital_Clock_Resources\RainLoop.mp4">
     </video>
     
-
-    <div id="Clock">00:00:00</div>
-
+    <div id="Clock"></div>
 
     <div id="PlayerContainer">      
-        <img id="ImageMusic" src="Digital_Clock_Resources\OddlyCuteImage.jpg">
+        <audio id="MainAudio" src=""></audio>  
+        <img id="ImageMusic" src="">
+        
         <div id="MusicName">
-            <p>Music Name</p>
-            <audio id="Audio" src="Digital_Clock_Resources\IsGingerSweet.mp3"></audio>
+            <div>MusicName</div>
         </div>    
+        <div id="SongProgressArea">
+            <div id="SongProgress">
+            </div>
+        </div>
+        <div id="DurationContainer">
+                <span class="MusicDuration" id="CurrentTime">00:40</span>
+                <span class="MusicDuration" id="FullDuration">30:20</span>
+        </div>
+      
+        <div class="VolumeControls">
+        <input class="AudioButtons" type="image" id="MuteButton" onclick="ToggleMute()" src="Digital_Clock_Resources/unmute.png">
+        <input id="VolumeSlider" type="range" min="0" max="100">
+        </div>
+        
         <div class="AudioControls">       
         <input class="AudioButtons" id="PrevButton" onclick="PrevSong()" type="image" src="Digital_Clock_Resources\PrevSong.png">
-        <input class="AudioButtons" id="PlayButton" onclick="PlayPause()" type="image" src="Digital_Clock_Resources\PlaySong.png">
+        <input class="AudioButtons" id="PlayButton" onclick="PlayPause()" value="Paused" type="image" src="Digital_Clock_Resources\PauseSong.png">
         <input class="AudioButtons" id="NextButton" onclick="NextSong()" type="image" src="Digital_Clock_Resources\NextSong.png">
         </div>        
     </div>
 
+    <script src="PlayList.js"></script>
+    <script src="MusicPlayer.js"></script>
     <script src="DigitalClock.js"></script>
 </body>
 </html>
