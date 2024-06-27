@@ -76,14 +76,32 @@ body{
 #SongProgressArea:hover{
     opacity: 1;
     height: 5px;
+    transition: 200ms;
 }
 #SongProgress{
     height: inherit;
     background: rgb(255, 255, 255);
-    width: 50%;
+    width: 0%;
     border-radius: inherit;
     cursor: pointer;
     opacity: .5;
+    position: relative;
+}
+#SongProgress::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: inherit;
+    margin-top: -4px;
+    background: inherit;
+    opacity: 1;
+    right: -5px;
+    opacity: 0;
+}
+#SongProgressArea:hover #SongProgress::before{
+    opacity: 1;
+    transition: 200ms;
 }
 #SongProgress:hover{
     opacity: 1;
@@ -137,15 +155,35 @@ body{
     margin: 0 auto;
     margin-bottom: 25px;
 }
-#VolumeSlider{
-    -webkit-appearance: none;
-    appearance: none;
+#ColorContainerSlider{
+    background: rgb(82, 81, 81);
     width: 127px;
     height: 6px;
     border-radius: 12px;
     opacity: .5;
     cursor: pointer;
-    background: linear-gradient(90deg, rgb(82, 81, 81) 50%, rgb(82, 81, 81) 50%);
+}
+#ColorContainerSlider:hover{
+    opacity: 1;
+}
+#ColorSlider{
+    height: inherit;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    width: 50%;
+}
+#VolumeSlider{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 127px;
+    height: 6px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: auto;
+    background: none;
 }
 #VolumeSlider:hover{
     opacity: 1;
@@ -157,7 +195,6 @@ body{
     height: 12px;
     background: white;
     border-radius: 50%;
-
 }
 .AudioButtons{
     height: 20px;

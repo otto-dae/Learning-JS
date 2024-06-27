@@ -18,20 +18,24 @@
         <img id="ImageMusic" src="">
         
         <div id="MusicName">
-            <div>MusicName</div>
+            <div></div>
         </div>    
         <div id="SongProgressArea">
-            <div id="SongProgress">
-            </div>
+            <div id="SongProgress"></div>
         </div>
         <div id="DurationContainer">
-                <span class="MusicDuration" id="CurrentTime">00:40</span>
-                <span class="MusicDuration" id="FullDuration">30:20</span>
+                <span class="MusicDuration" id="CurrentTime"></span>
+                <span class="MusicDuration" id="FullDuration"></span>
         </div>
       
         <div class="VolumeControls">
-        <input class="AudioButtons" type="image" id="MuteButton" onclick="ToggleMute()" src="Digital_Clock_Resources/unmute.png">
-        <input id="VolumeSlider" type="range" min="0" max="100">
+            <input class="AudioButtons" type="image" id="MuteButton" onclick="ToggleMute()" src="Digital_Clock_Resources/unmute.png">
+            
+            <div class="SliderBar" id="ColorContainerSlider">
+                <div class="SliderBar" id="ColorSlider">
+                    <input id="VolumeSlider" type="range" min="0" max="100">
+                </div>
+            </div>
         </div>
         
         <div class="AudioControls">       
